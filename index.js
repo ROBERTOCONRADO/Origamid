@@ -23,3 +23,27 @@ if(minhaIdade > idadeParente) {
 var expressao = (5 - 2) && (5 - ' ') && (5 - 2);
                //  3           5           3
 //Sempre que a expressao tem _&&_ retorna a primeira falso ou a última verdadeiro               
+
+
+// Verifique as seguintes variáveis são truthy ou falsy 
+var nome = "Roberto Conrado";
+var idade = 28;
+var menorDeIdade = false;
+var empregoFuturo;
+var dinheiroNaConta = 0;
+console.log(!!nome, !!idade, !!menorDeIdade, !!empregoFuturo, !!dinheiroNaConta);
+//true   true   false   false   false
+
+//O que irá aparecer no console?
+if(("Gato" === "gato") && (5 > 2)) {
+    console.log("Verdadeiro");
+}else{
+    console.log("Falso");//<===
+}
+
+//O que irá aparecer no console?
+if(("Gato" === "gato") || (5 > 2)) {
+    console.log("Gato" && "Cão");// 'Cão'<===
+}else{
+    console.log("Falso");
+}
