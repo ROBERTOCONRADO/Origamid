@@ -43,7 +43,7 @@ if(("Gato" === "gato") && (5 > 2)) {
 
 //O que irá aparecer no console?
 if(("Gato" === "gato") || (5 > 2)) {
-    console.log("Gato" && "Cão");// 'Cão'<===
+    console.log("Cat" && "Dog");// 'Dog'<===
 }else{
     console.log("Falso");
 }
