@@ -15,6 +15,20 @@ for(let frut = 0; frut < frutas.length; frut++) {
     }
 }
 //Coloque a última frutas da array acima em uma variável sem remover a mesma da array;
-//Forma passada Origamid
-let ultimaFruta = frutas[4];
+let ultimaFruta = frutas[frutas.length - 1];
 console.log(ultimaFruta);
+
+
+//Some 500 ao valor da scroll abaixo, atribuindo o novo valor a scroll
+var scroll = 1000;
+scroll += 500;
+
+
+//Atribua true para a variável darCredito caso o cliente possua carro e casa.
+// E false caso o contrario
+var possuiCarro = true;
+var possuiCasa = true;
+var darCredito;
+
+darCredito = (possuiCarro && possuiCasa) ? "Credito aprovado!" : "Credito reprovado!";
+console.log(darCredito);
