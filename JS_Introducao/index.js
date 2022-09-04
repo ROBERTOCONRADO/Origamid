@@ -32,7 +32,7 @@ var menorDeIdade = false;
 var empregoFuturo;
 var dinheiroNaConta = 0;
 console.log(!!nome, !!idade, !!menorDeIdade, !!empregoFuturo, !!dinheiroNaConta);
-//true   true   false   false   false
+            //true    true        false            false             false
 
 //O que irá aparecer no console?
 if(("Gato" === "gato") && (5 > 2)) {
