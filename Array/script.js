@@ -29,6 +29,6 @@ scroll += 500;
 var possuiCarro = true;
 var possuiCasa = true;
 var darCredito;
-
+//Operador ternario
 darCredito = (possuiCarro && possuiCasa) ? "Credito aprovado!" : "Credito reprovado!";
 console.log(darCredito);
