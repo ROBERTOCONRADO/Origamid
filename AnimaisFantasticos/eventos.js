@@ -21,19 +21,21 @@ todosElementos.forEach((elemento) => {
 })
 
 //Utilizando o código anteriror, ao invés de mostrar no console, remova o elemento que está sendo clicado.
-const todosElementos = document.querySelectorAll('body *');
+const tElementos = document.querySelectorAll('body *');
 function handleElement(event) {
-    event.currentTarget.remove();  //<==
+    // event.currentTarget.remove();  //<==
 }
-todosElementos.forEach((elemento) => {
+tElementos.forEach((elemento) => {
     elemento.addEventListener('click', handleElement);
 })
 
 //Se o usuário clicar na tecla (t), aumente todo o texto do site.
-// function aumentarText(e) {
-
-// }
-
+function clickT(e) {
+    if(e.key === "T" || e.key === "t") {
+    document.documentElement.classList.toggle("fontSize");
+    }
+}
+window.addEventListener('keydown', clickT);
 
 
 

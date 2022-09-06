@@ -9,6 +9,9 @@ img {
 ul {
     list-style: none;
 }
+html.fontSize {
+    font-size: 150%;
+}
 
 /*===Start===*/
 body {
