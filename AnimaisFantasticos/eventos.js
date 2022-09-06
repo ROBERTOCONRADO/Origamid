@@ -12,11 +12,22 @@ linksInternos.forEach((link) => {
 })
 
 //Selecione todos os elementos do site começando a partir do body, ao clique mostre exatamente quais elementos estão sendo clicados.
-let body = document.getElementsByTagName('body');
-console.log(body);
-
+const todosElementos = document.querySelectorAll('body *');
+function handleElement(event) {
+    console.log(event.currentTarget);
+}
+todosElementos.forEach((elemento) => {
+    elemento.addEventListener('click', handleElement);
+})
 
 //Utilizando o código anteriror, ao invés de mostrar no console, remova o elemento que está sendo clicado.
+const todosElementos = document.querySelectorAll('body *');
+function handleElement(event) {
+    event.currentTarget.remove();  //<==
+}
+todosElementos.forEach((elemento) => {
+    elemento.addEventListener('click', handleElement);
+})
 
 //Se o usuário clicar na tecla (t), aumente todo o texto do site.
 // function aumentarText(e) {
