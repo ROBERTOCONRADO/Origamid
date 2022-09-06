@@ -1,4 +1,4 @@
-/*
+
 //Retorne no console todas as imagens do site
 let imagens = document.querySelectorAll('img');
 console.log(imagens);
@@ -34,4 +34,3 @@ paragrafoSite.forEach((item, index) => {
 paragrafoSite.forEach((item) => {
     console.log(item.innerText);
 });
-*/

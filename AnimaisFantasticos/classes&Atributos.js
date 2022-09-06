@@ -11,13 +11,13 @@ menu.forEach((item) => {
 menu[0].classList.add('ativo');
 
 //Verifique se as imagens possuem atributo alt
-let images = document.querySelectorAll('img');
+const images = document.querySelectorAll('img');
 images.forEach((img) => {
-    
+    const possui = img.hasAttribute('alt');
+    console.log(possui);
 })
-if (images.hasAttribute('alt')) {
-    console.log('Há o atributo!');
-}else {
-    console.log('Não há atributo alt!');
-}
+
 //Modifique o href do link externo no menu
+let linkExterno = document.querySelector('a[href^="http"]');
+linkExterno.setAttribute('href', 'https://github.io/ROBERTOCONRADO/');
+console.log(linkExterno);
