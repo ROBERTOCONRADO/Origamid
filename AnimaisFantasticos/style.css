@@ -278,8 +278,11 @@ body {
     display: none;
 }
 .js-acordion dt::after {
-    content: "";
+    content: " ⤵";
 }
-.js-acordion dt.active {
+.js-acordion dt.active::after {
+    content: "⤴";
+}
+.js-acordion dd.active {
     display: block;
 }
