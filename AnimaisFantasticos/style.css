@@ -146,6 +146,7 @@ body {
     margin-top: 2rem;
     margin-bottom: .5rem;
     color: #E54;
+    cursor: pointer;
 }
 
 .faq-list dt::before {
@@ -278,11 +279,12 @@ body {
     display: none;
 }
 .js-acordion dt::after {
-    content: " ⤵";
+    content: " ⇲";
 }
 .js-acordion dt.active::after {
-    content: "⤴";
+    content: " ⇱";
 }
 .js-acordion dd.active {
     display: block;
+    animation: show 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
 }

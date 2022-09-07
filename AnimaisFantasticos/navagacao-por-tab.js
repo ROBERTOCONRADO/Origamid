@@ -16,15 +16,26 @@ function initTabNav() {
             });
         });
     }
+
+    const acoordionList = document.querySelectorAll('.js-acordion dt');
+    if(acoordionList.length) {
+        acoordionList[0].classList.add('active');
+        acoordionList[0].nextElementSibling.classList.add('active');
+        function activeAcoordion() {
+            this.classList.toggle('active');
+            this.nextElementSibling.classList.toggle('active');
+        }
+        acoordionList.forEach((item) => {
+        item.addEventListener('click', activeAcoordion);
+        });
+    }
 }
 initTabNav();
 
-const acoordionList = document.querySelectorAll('.js-acordion dt')
-function activeAcoordion() {
-    this.classList.add('active');
-    this.nextElementSibling.classList.add('active');
+const linksInternosScroll = document.querySelectorAll('.js-menu a[href^="#"]');
+function scrollSuave() {
+    
 }
-acoordionList.forEach((item) => {
- item.addEventListener('click', activeAcoordion);
+linksInternosScroll.forEach((item) => {
+    item.addEventListener('click', scrollSuave);
 });
-
