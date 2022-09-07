@@ -108,7 +108,9 @@ body {
     overflow-y: scroll;
     grid-column: 2;
 }
-
+.animais-list li {
+    cursor: pointer;
+}
 /*===Scroll-Barra===*/
 .animais-list::-webkit-scrollbar {
     width: 18px;
@@ -245,7 +247,7 @@ body {
 }
 
 /*===Js===*/
-.js-tabcontent section {
+.js .js-tabcontent section {
     display: none;
 }
 
@@ -253,8 +255,6 @@ body {
     display: block !important;
     animation: show 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
 }
-
-
 @keyframes show {
     0% {
         transform: scaleX(0);
@@ -271,4 +271,15 @@ body {
         transform-origin: 0% 0%;
         opacity: 1;
     }
+}
+
+/*===Acordion===*/
+.js .js-acordion dd {
+    display: none;
+}
+.js-acordion dt::after {
+    content: "";
+}
+.js-acordion dt.active {
+    display: block;
 }
