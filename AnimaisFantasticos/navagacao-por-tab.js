@@ -1,4 +1,4 @@
-function initTabNav() {//<==Isolar 
+function initSeparation() {//<==Isolar 
     //Função para linkar img ao seu respectivo texto
     const tabMenu = document.querySelectorAll('.js-tabmenu li');
     const tabContent = document.querySelectorAll('.js-tabcontent section');
@@ -50,8 +50,7 @@ function initTabNav() {//<==Isolar
     linksInternosScroll.forEach((item) => {
         item.addEventListener('click', scrollSuave);
     });
-
-
+    //==AnimateSections==
     const sections = document.querySelectorAll('.js-scroll');
     if(sections.length > 0) {
         const windowMetade = window.innerHeight * 0.8;
@@ -69,7 +68,8 @@ function initTabNav() {//<==Isolar
         window.addEventListener('scroll', animaScroll);
     }
 }
-initTabNav();
+initSeparation();
+
 
 
     
