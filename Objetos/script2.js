@@ -57,8 +57,14 @@ console.log(html);
 
 //Retorne o último caracter da frase
 const frase = 'Melhor do ano!';
-frase.endsWith
-console.log(frase);
+console.log(frase[--frase.length]);//<== "!"
 
 //Retornr o total de taxas
-const transacoes2 = ['Taxa de banco', 'TAXA de pão', 'taxa de mercado', 'Depósito bamcário', 'TARIFA especial'];
+const transacoes2 = ['Taxa de banco', '    TAXA de pão', '  taxa de mercado', 'Depósito bamcário', 'TARIFA especial     '];
+let totalTaxas = 0;
+transacoes2.forEach((item) => {
+    item = item.trim().toLowerCase().slice(0,4);
+    if(item === 'taxa')
+        totalTaxas++;
+    })
+    console.log(totalTaxas);
