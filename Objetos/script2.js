@@ -59,7 +59,7 @@ console.log(html);
 const frase = 'Melhor do ano!';
 console.log(frase[--frase.length]);//<== "!"
 
-//Retornr o total de taxas
+//Retornr o total de itens "taxas"
 const transacoes2 = ['Taxa de banco', '    TAXA de pão', '  taxa de mercado', 'Depósito bamcário', 'TARIFA especial     '];
 let totalTaxas = 0;
 transacoes2.forEach((item) => {
@@ -67,4 +67,4 @@ transacoes2.forEach((item) => {
     if(item === 'taxa')
         totalTaxas++;
     })
-    console.log(totalTaxas);
+    console.log(totalTaxas);//<== "3"
