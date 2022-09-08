@@ -26,3 +26,23 @@ li.value; //Number
 li.hidden; //Boolean
 li.offsetLeft; //Number
 li.click(); //Undefined
+
+//Qual o contructor do dado abaixo
+li.hidden.constructor.name // String
+
+//Liste 5 objetos nativos
+Object
+String
+Array
+Number
+Function
+//Liste 5 objetos de browser
+Window
+history
+Document
+HTMLCollection
+NodeList
+
+//Liste 2 métodos, propriedades ou objetos presentes no Chrome que não existem em Firefox
+webkitHidden
+webkitVisibilityState
