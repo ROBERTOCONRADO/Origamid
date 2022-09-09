@@ -1,15 +1,26 @@
-// Selecione cada curso e retorne uma array
-// com objetos contendo o título, descricao,
-// aulas e horas de cada curso
+// Selecione cada curso e retorne uma array com objetos contendo o título, descricao, aulas e horas de cada curso
+const cursos = document.querySelectorAll('.curso');
+const arrayCursos = Array.from(cursos);
 
+const objetosCurso = arrayCursos.map((item) => {
+    const titulo = item.querySelector('h1').innerText;
+    const descricao = item.querySelector('p').innerText;
+    const aulas = item.querySelector('.aulas').innerText;
+    const horas = item.querySelector('.horas').innerText;
+    return {
+        titulo,
+        descricao,
+        aulas,
+        horas,
+    }
+});
+console.log(objetosCurso);
 
-// Retorne uma lista com os
-// números maiores que 100
+// Retorne uma lista com os números maiores que 100
 const numeros = [3, 44, 333, 23, 122, 322, 33];
 
 
-// Verifique se Baixo faz parte
-// da lista de instrumentos e retorne true
+// Verifique se Baixo faz parte da lista de instrumentos e retorne true
 const instrumentos = ['Guitarra', 'Baixo', 'Bateria', 'Teclado']
 
 
