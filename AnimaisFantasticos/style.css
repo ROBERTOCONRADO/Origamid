@@ -78,6 +78,14 @@ body {
     margin-bottom: 1rem;
     grid-column: 1 / 4;
 }
+.tituloh2 {
+    font-family: 'Playfair Display SC', georgia;
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    grid-column: 1 / 4;
+}
 
 .animais h2 {
     font-family: 'IBM Plex Mono', monospace;
