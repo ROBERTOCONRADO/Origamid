@@ -28,3 +28,5 @@ console.log(Object.getOwnPropertyNames(String.prototype));
 
 console.log(Object.getOwnPropertyNames(Array.prototype));  
 // (36) ['length', 'constructor', 'at', 'concat', 'copyWithin', 'fill', 'find', 'findIndex', 'lastIndexOf', 'pop', 'push', 'reverse', 'shift', 'unshift', 'slice', 'sort', 'splice', 'includes', 'indexOf', 'join', 'keys', 'entries', 'values', 'forEach', 'filter', 'flat', 'flatMap', 'map', 'every', 'some', 'reduce', 'reduceRight', 'toLocaleString', 'toString', 'findLast', 'findLastIndex']
+
+//Para usar principalmente em biblioteca de terceiros quando não obtiver uma boa documentação. (Melhorar o desenvolbvimento!)
