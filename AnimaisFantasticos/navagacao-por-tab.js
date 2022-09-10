@@ -9,7 +9,8 @@ function initSeparation() {//<==Isolar
             tabContent.forEach((section) => {
                 section.classList.remove('ativo');
             });
-            tabContent[index].classList.add('ativo');
+            const direcao = tabContent[index].dataset.anime;
+            tabContent[index].classList.add('ativo', direcao);
         }
         tabMenu.forEach((itemMenu, index) => {
             itemMenu.addEventListener('click', () => {
