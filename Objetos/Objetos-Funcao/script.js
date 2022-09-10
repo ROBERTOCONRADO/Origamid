@@ -15,3 +15,10 @@ function criarElemento(tag, classe, conteudo) {
 console.log(criarElemento('li', 'teste', 'Óla! Seja bem-vindo.'));
 
 // Crie uma nova função utilizando a anterior como base essa nova função deverá sempre criar h1 com a classe titulo. Porém o parâmetro conteudo continuará dinâmico
+const h1Titulo = criarElemento.bind(null, 'h1', 'titulo');
+
+const cursosReact = h1Titulo('Cursos de React');
+const cursosCSS = h1Titulo('Cursos de CSS');
+const cursosJS = h1Titulo('Cursos de JS');
+
+console.log(cursosReact, cursosCSS, cursosJS);
