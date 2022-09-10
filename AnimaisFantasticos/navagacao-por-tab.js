@@ -1,7 +1,7 @@
 function initSeparation() {//<==Isolar 
     //Função para linkar img ao seu respectivo texto
-    const tabMenu = document.querySelectorAll('.js-tabmenu li');
-    const tabContent = document.querySelectorAll('.js-tabcontent section');
+    const tabMenu = document.querySelectorAll('[data-tab="menu"] li');
+    const tabContent = document.querySelectorAll('[data-tab="content"] section');
 
     if(tabMenu.length && tabContent.length) {
         tabContent[0].classList.add('ativo');
@@ -19,7 +19,7 @@ function initSeparation() {//<==Isolar
         });
     }
     //==Accordion==
-    const acoordionList = document.querySelectorAll('.js-acordion dt');
+    const acoordionList = document.querySelectorAll('[data-anime="accordion"] dt');
     if(acoordionList.length) {
         acoordionList[0].classList.add('active');
         acoordionList[0].nextElementSibling.classList.add('active');
@@ -32,7 +32,7 @@ function initSeparation() {//<==Isolar
         });
     }
     //==ScrollLinks==
-    const linksInternosScroll = document.querySelectorAll('.js-menu a[href^="#"]');
+    const linksInternosScroll = document.querySelectorAll('[data-menu="suave"] a[href^="#"]');
     function scrollSuave(e) {
         e.preventDefault();
         const href = e.currentTarget.getAttribute('href');
@@ -52,7 +52,7 @@ function initSeparation() {//<==Isolar
         item.addEventListener('click', scrollSuave);
     });
     //==AnimateSections==
-    const sections = document.querySelectorAll('.js-scroll');
+    const sections = document.querySelectorAll('[data-anime="scroll"]');
     if(sections.length > 0) {
         const windowMetade = window.innerHeight * 0.8;
         function animaScroll() {

@@ -10,7 +10,7 @@
     <title>Animais Fantásticos</title>
 </head>
 <body>
-    <nav class="menu js-menu">
+    <nav class="menu" data-menu="suave">
         <ul>
             <li><a href="#animais">Animais</a></li>
             <li><a href="#faq">Faq</a></li>
@@ -19,9 +19,9 @@
         </ul>
     </nav>
 
-    <section class="grid-section animais js-scroll" id="animais">
+    <section class="grid-section animais" data-anime="scroll" id="animais">
         <h1 class="titulo">Animais Fantásticos</h1>
-        <ul class="animais-list js-tabmenu">
+        <ul class="animais-list" data-tab="menu">
             <li>
                 <img src="img/imagem1.jpg">
             </li>
@@ -41,7 +41,7 @@
                 <img src="img/imagem6.jpg">
             </li>
         </ul>
-        <div class="animais-descricao js-tabcontent">
+        <div class="animais-descricao" data-tab="content">
             <section data-anime="show-left">
                 <h2>Raposa</h2>
                 <p>Raposas são animais com características semelhantes às dos cachorros. Trata-se de um animal com focinho pontiagudo, crânio achatado, orelhas eretas e pontudas e uma cauda espessa.</p>
@@ -87,9 +87,9 @@
         </div>
     </section>
 
-    <section class="grid-section faq js-scroll" id="faq">
+    <section class="grid-section faq" data-anime="scroll" id="faq">
         <h2 class="titulo">FAQ</h2>
-        <dl class="faq-list js-acordion">
+        <dl class="faq-list" data-anime="accordion">
             <dt>Qual a periculosidade do Leão?</dt>
             <dd>O leão é o segundo maior felino depois do tigre, apresentando comprimento e peso menor, mas sendo mais alto na cernelha. Possui uma pelagem curta e a coloração é unicolor, variando do castanho claro ao cinza prateado e do vermelho amarelado ao marrom escuro.
             </dd>
@@ -105,7 +105,7 @@
         </dl>
     </section>
 
-    <section class="grid-section contato js-scroll" id="contato">
+    <section class="grid-section contato" data-anime="scroll" id="contato">
         <h2 class="titulo">Contato</h2>
         <div class="mapa">
             <img src="./img/mapa.png" alt="mapa">
