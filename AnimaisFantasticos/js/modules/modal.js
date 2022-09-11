@@ -3,18 +3,21 @@ export default function initModal() {
     const botaoFexar = document.querySelector('[data-modal="fechar"]');
     const modal = document.querySelector('[data-modal="container"]');
 
-    function abrirModal(event) {
-        event.preventDefault();
-        modal.classList.toggle('ativo');
+    if(botaoAbrir && botaoFexar && modal) {
+        function abrirModal(event) {
+            event.preventDefault();
+            modal.classList.toggle('ativo');
+        }
+        function fecharModal(event) {
+            modal.classList.remove('ativo');
+        }
+        function cliqueForaModal(event) {
+            if(event.target === this)
+            fecharModal()
+        }
+    
+        botaoAbrir.addEventListener('mouseenter', abrirModal);
+        botaoFexar.addEventListener('click', fecharModal);
+        modal.addEventListener('click', cliqueForaModal);
     }
-    function fecharModal(event) {
-        modal.classList.remove('ativo');
-    }
-    function cliqueForaModal(event) {
-        fecharModal()
-    }
-
-    botaoAbrir.addEventListener('mouseenter', abrirModal);
-    botaoFexar.addEventListener('click', fecharModal);
-    modal.addEventListener('click', cliqueForaModal);
 }
