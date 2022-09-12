@@ -1,5 +1,5 @@
 //Mude a cor da tela para azul e depois para vermelho a cada 10s
-setInterval(mudarClasse, 10000);
+setInterval(mudarClasse, 3000);
 function mudarClasse() {
     document.body.classList.toggle('active');
 }

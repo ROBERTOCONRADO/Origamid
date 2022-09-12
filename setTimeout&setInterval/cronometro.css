@@ -1,9 +1,9 @@
 /*SetTimeOut/SetInterval*/
 body {
-    background-color: rgba(0, 0, 255, 0.535);
+    background-image: linear-gradient(to left, red, yellow);
 }
 body.active {
-    background-color: rgba(255, 0, 0, 0.516);
+    background-image: linear-gradient(to right, red , yellow);
 }
 
 /*Cronometro*/

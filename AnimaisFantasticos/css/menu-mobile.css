@@ -1,0 +1,30 @@
+[data-menu="button"] {
+    display: none;
+
+}
+
+@media (max-width: 700px) {
+    .js [data-menu="button"] {
+        display: block;
+        background-color: #222;
+        border: none;
+        padding: .5rem 1rem;
+        border-radius: 4px;
+        text-transform: uppercase;
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+        margin: 10px 10px;
+    }
+    .js [data-menu="button"]::before {
+        content: '';
+        display: inline-block;
+        height: 2px;
+        width: 12px;
+        background-color: white;
+        box-shadow: 0 -4px white, 0 4px white;
+        margin-right: 8px;
+        margin-bottom: 3px;
+    }
+}
