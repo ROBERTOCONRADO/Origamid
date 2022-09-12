@@ -4,7 +4,8 @@
 [data-dropdown] .dropdown-menu {
     display: none;
 }
-[data-dropdown]:hover .dropdown-menu {
+[data-dropdown]:hover .dropdown-menu,
+[data-dropdown].active .dropdown-menu {
     display: block;
     animation: __up .3s forwards;
 }
