@@ -1,0 +1,18 @@
+/*SetTimeOut/SetInterval*/
+body {
+    background-color: rgba(0, 0, 255, 0.535);
+}
+body.active {
+    background-color: rgba(255, 0, 0, 0.516);
+}
+
+/*Cronometro*/
+div {
+    margin: 100px auto;
+    background-color: black;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
