@@ -9,10 +9,33 @@ body.active {
 /*Cronometro*/
 div {
     margin: 100px auto;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.744);
     width: 400px;
     height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: end;
+    display: block;
+    border-radius: 5px;
+}
+span {
+    color: aliceblue;
+    font-size: 100px;
+    display: inline-block;
+    width: 100%;
+    margin-top: 80px;
+    margin-left: 45px;
+}
+.iniciar, .pausar {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 30px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0px 0px 10px white;
+}
+.iniciar {
+    margin-top: 76px;
+    margin-left: 44px;
+}
+.iniciar:hover, .pausar:hover {
+    background-color: rgba(0, 0, 0, 0.744);
+    color: white;
 }
