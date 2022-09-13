@@ -326,3 +326,18 @@ body {
     transform: translate3d(0, 0, 0);
 }
 
+/*Funcionamento.js*/
+[data-semana]::after {
+    display: inline-block;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: rgb(247, 25, 0);
+    border-radius: 50%;
+    margin-left: 4px;
+    border: 1px solid #222;
+}
+[data-semana].aberto::after {
+    background: #3F4;
+}
+
