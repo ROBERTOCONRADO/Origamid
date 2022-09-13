@@ -243,6 +243,9 @@ body {
     .titulo {
         font-size: 2rem;
     }
+    .tituloh2 {
+        font-size: 1.7rem;
+    }
 
     .menu {
         margin-top: 0px;
