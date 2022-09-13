@@ -1,6 +1,5 @@
 export default function initTooltip() {
     const tooltip = document.querySelectorAll('[data-tooltip]');
-    console.log(tooltip);
 
     tooltip.forEach((item) => {
         item.addEventListener('mouseover', onMouseOver);
