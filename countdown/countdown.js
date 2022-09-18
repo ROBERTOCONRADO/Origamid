@@ -14,4 +14,26 @@ export default class Countdown {
     get days() {
         return Math.floor(this._timeStampDiff / (24 * 60 * 60 * 1000));
     }
+    get hours() {
+        return Math.floor(this._timeStampDiff / (60 * 60 * 1000));
+    }
+    get minutes() {
+        return Math.floor(this._timeStampDiff / (60 * 1000));
+    }
+    get seconds() {
+        return Math.floor(this._timeStampDiff / 1000);
+    }
+    get total() {
+        const days = this.days;
+        const hours = this.hours;
+        const minutes = this.minutes;
+        const seconds = this.seconds;
+        return {
+            days,
+            hours,
+            minutes,
+            seconds,
+        }
+    }
+
 }
