@@ -25,9 +25,9 @@ export default class Countdown {
     }
     get total() {
         const days = this.days;
-        const hours = this.hours;
-        const minutes = this.minutes;
-        const seconds = this.seconds;
+        const hours = this.hours % 24;
+        const minutes = this.minutes % 60;
+        const seconds = this.seconds % 60;
         return {
             days,
             hours,
