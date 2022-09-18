@@ -1,12 +1,32 @@
 body {
-    background-color: slategray;
+    background-color: rgb(55, 00, 00)
+}
+h1 {
+    text-align: center;
+    color: #FFAAAA;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: -1px
+}
+.container {
+    background-color: #803615;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
 }
 li {
-    margin-bottom: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 500;
+    font-weight: bold;
+    color: #FFAAAA;
+    margin: 20px 0;
+    list-style: none;
 }
 .outubro, .novembro, .natal, .anoNovo {
+    color: #FF9500;
     font-weight: bold;
-    color: darkred;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    background-color: rgb(55, 00, 00);
+    padding: 10px;
+    border-radius: 5px;
 }
