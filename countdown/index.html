@@ -5,14 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CountDown</title>
+    <style>
+        body {
+            background-color: slategray;
+        }
+        li {
+            margin-bottom: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 500;
+        }
+        .outubro {
+            font-weight: bold;
+            color: darkred;
+        }
+    </style>
 </head>
 <body>
     <div>
         <ul>
-            <li>Faltam <span>0</span>para o mês de outubro.</li>
-            <li>Faltam <span>0</span>para o mês de novembro.</li>
-            <li>Faltam <span>0</span>para o Natal</li>
-            <li>Faltam <span>0</span>para o Ano novo</li>
+            <li>Faltam <span class="outubro"></span> para o mês de outubro.</li>
+            <li>Faltam <span class="novembro">0</span>para o mês de novembro.</li>
+            <li>Faltam <span class="natal">0</span>para o Natal</li>
+            <li>Faltam <span class="anoNovo">0</span>para o Ano novo</li>
         </ul>
     </div>
     <script type="module" src="importcount.js"></script>
