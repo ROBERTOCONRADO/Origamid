@@ -35,7 +35,6 @@ export default class Countdown {
             seconds,
         }
     }
-
 }
 
 

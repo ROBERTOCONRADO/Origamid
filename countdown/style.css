@@ -1,0 +1,12 @@
+body {
+    background-color: slategray;
+}
+li {
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+.outubro, .novembro, .natal, .anoNovo {
+    font-weight: bold;
+    color: darkred;
+}
