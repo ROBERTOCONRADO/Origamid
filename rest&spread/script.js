@@ -10,7 +10,6 @@ function createButton(background, color) {
     return buttonElement;
 }
 const redButton = createButton();
-
 //Com ES6
 function createButton(background = 'blue', color = 'red') {
     const buttonElement = document.createElement('button');
