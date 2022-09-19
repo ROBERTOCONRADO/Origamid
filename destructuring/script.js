@@ -12,13 +12,17 @@ console.log(margin);
 let cursoAtivo = 'JavaScript';
 let cursoInativo = 'HTML';
 
-//Corrija o erro abaixo
+[cursoAtivo, cursoInativo] = [cursoInativo, cursoAtivo]
+console.log(cursoAtivo);//<== HTML
+console.log(cursoInativo);//<== JavaScript
+
+//Erro corrigido sobre destruturação
 const cachorro = {
   nome: 'bob',
   raca: 'labrador',
   cor: 'amarelo'
 }
-
 const {cor: corDoCachorro} = cachorro;
+console.log(corDoCachorro);
 
 
