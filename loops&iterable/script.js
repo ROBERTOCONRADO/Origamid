@@ -7,5 +7,5 @@ for(const li of lis) {
 
 //Utilize o for...in para listar todos as propriedades e valores do objeto window
 for(const window_ in window) {
-    console.log(window_);
+    console.log(window_ + ': ' + window[window_]);
 }
