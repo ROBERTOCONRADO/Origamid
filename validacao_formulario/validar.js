@@ -19,8 +19,10 @@ export default class Validar {
     validarMudanca(cpfElement) {
         if(this.validar(cpfElement.value)) {
             cpfElement.value = this.formatar(cpfElement.value);
+            cpfElement.classList.add('valido');
+            cpfElement.classList.remove('error');
         }else{
-
+            cpfElement.classList.add('error');
         }
     }
     adicionarEvento() {
