@@ -16,7 +16,7 @@ export default function initModal() {
             fecharModal()
         }
     
-        botaoAbrir.addEventListener('mouseenter', abrirModal);
+        botaoAbrir.addEventListener('click', abrirModal);
         botaoFexar.addEventListener('click', fecharModal);
         modal.addEventListener('click', cliqueForaModal);
     }
