@@ -15,11 +15,14 @@
 }
 .modal {
     background-color: antiquewhite;
-    padding: 50px;
+    padding: 60px 20px 60px 20px;
+    width: 80vh;
+    margin: 10px;
     border: 10px solid #FB5;
     box-shadow: 0 0 0 10px rgb(255, 223, 181);
     position: relative;
-    min-width: 300px;
+    max-width: 600px;
+    box-sizing: border-box;
 }
 /*Modal-Animation Minify*/
 .modal-animate{animation:modal-animate 1.1s both}
@@ -31,15 +34,14 @@
 
 .fechar {
     position: absolute;
-    top: -29px;
-    right: -28px;
+    top: -25px;
+    right: -25px;
     font-weight: bold;
-    background-color: #FB5;
+    background: #FB5 url(../img/fechar.svg) no-repeat center center;
     border: 4px solid rgb(255, 223, 181);
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    color: rgb(108, 65, 1);
     box-shadow: 0 4px 4px 0 rgba(0,0,0,0.4);
 }
 .fechar:hover {
@@ -56,6 +58,7 @@
     width: 100%;
     padding: .7rem .5rem;
     box-sizing: border-box;
+    border-radius: 0px;
 }
 .modal button[type="submit"] {
     display: block;
