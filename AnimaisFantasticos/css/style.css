@@ -270,6 +270,12 @@ body {
     }
 }
 
+@media (max-width: 400px) {
+    .animais-list {
+        height: 655px;
+    }
+}
+
 /*===Js===*/
 .js [data-tab="content"] section {
     display: none;
@@ -315,10 +321,19 @@ body {
     display: none;
 }
 [data-anime="accordion"] dt::after {
-    content: " ⇲";
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: url(../img/arrow-red.svg) no-repeat center center;
+    margin-left: 2px;
+    filter: saturate(0%); 
+    transform: rotate(90deg);
+    transition: transform .2s;
 }
 [data-anime="accordion"] dt.active::after {
-    content: " ⇱";
+    content: "";
+    transform: rotate(-90deg);
 }
 [data-anime="accordion"] dd.active {
     display: block;
@@ -356,5 +371,12 @@ body {
     padding: .2rem .5rem;
     font-weight: bold;
     border-radius: 3px;
+}
+
+.arrow-black {
+    background: url(../img/arrow-black.svg) no-repeat center center;
+    display: inline-block;
+    width: 8px;
+    height: 10px;
 }
 
