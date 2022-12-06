@@ -186,7 +186,7 @@ body {
 
 .mapa-localizacao {
     border-radius: 4px;
-    box-shadow:  13px 13px 20px #aaaaaa, -13px -13px 20px #ffffff;
+    box-shadow:  4px 4px 40px #44444450, -4px -4px 40px #aaaaaa58;
 }
 
 .dados {
@@ -205,6 +205,11 @@ body {
     height: 10px;
     margin-right: 10px;
     background-color: #FB5;
+}
+
+.dados li a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .copy {
